@@ -36,3 +36,5 @@ a:hover{
 	color: cyan;
 	background: gray;
 }											
+@media screen and (max-width:600px){ h{font-size:60px;} .container{width:100%;}}
+	
