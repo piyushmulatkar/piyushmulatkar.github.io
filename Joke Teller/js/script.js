@@ -8,7 +8,7 @@ function toggleButton() {
 	button.disabled = !button.disabled;
 }
 //Passing joke
-function tellMe(){
+function tellMe(joke){
 	VoiceRSS.speech({
             key: 'fe5328bcf8e14f04942499a8564df7f3',
             src: joke,
@@ -25,8 +25,7 @@ async function getJokes(){
 	let joke = '';
 	const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Spooky?blacklistFlags=nsfw,religious,racist,sexist,explicit';
 	try{
-		console.log('test');
-		const response = await fetch('apiUrl');
+		const response = await fetch(apiUrl);
 		const data = await response.json();
 		if (data.setup){
 			joke=`${data.setup} ... ${data.delivery}`;
@@ -38,7 +37,7 @@ async function getJokes(){
 		//disable button
 		toggleButton();
 	}catch(error){
-			alert(error);
+		
 	}
 }
 //Event Listner
