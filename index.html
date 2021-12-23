@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio | Piyush Mulatkar</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
-		<!-- 			
-	<h1>My Projects</h1>
-	<div class="container">
-	<a href="./Quote Generator/index.html">Quote Generator</a>
-	<a href="./Infinite Scroll/index.html">Infinite Scroll</a>
-	<a href="./Picture In Picture/index.html">Picture In Picture</a>
-	<a href="./Joke Teller/index.html">Joke Teller</a>
-	<a href="./Audelia/index.html">Audelia Web Designs</a>
-
-	</div> -->
-
+	<div id="mySidenav" class="sidenav">
+  		<a class="nav-link"href="#home">Home</a>
+		<a class="nav-link"href="#about-me">About me</a>
+		<a class="nav-link"href="#skills">Skills</a>
+		<a class="nav-link"href="#projects">Projects</a>
+		<a class="nav-link"href="#contact">Contact</a>
+	</div>
 	<nav id="navbar">
 		<h2 id="logo"><span id="logo-highlight">PORT</span>FOLIO</h2>
 		<ul>
@@ -26,6 +25,11 @@
 			<li><a class="nav-link"href="#projects">Projects</a></li>
 			<li><a class="nav-link"href="#contact">Contact</a></li>
 		</ul>
+		<div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 	</nav>
 	<section class="section" id="home">
 		<div id="info-wrapper">
@@ -77,16 +81,24 @@
 	<section class="section" id="projects">
 		<h2 class="section-heading">My Projects</h2>
 		<div id="project-grid">
-			<div class="project-card" id="project-1"><img src="./img/pip.png" alt=""></div>
-			<div class="project-card" id="project-2"><img src="./img/audelia.png" alt=""></div>
-			<div class="project-card" id="project-3"><img src="./img/quote.png" alt=""></div>
-			<div class="project-card" id="project-4"><img src="./img/infinite.png" alt=""></div>
-			<div class="project-card" id="project-5"><img src="./img/joke.png" alt=""></div>
+			<div class="project-card" id="project-1"><a href="https://piyushmulatkar.github.io/Picture In Picture"><img src="./img/pip.png" alt="">Test</a></div>
+			<div class="project-card" id="project-2"><a href="https://piyushmulatkar.github.io/Audelia"><img src="./img/audelia.png" alt=""></a></div>
+			<div class="project-card" id="project-3"><a href="https://piyushmulatkar.github.io/Quote%20Generator"><img src="./img/quote.png" alt=""></a></div>
+			<div class="project-card" id="project-4"><a href="https://piyushmulatkar.github.io/Infinite Scroll"><img src="./img/infinite.png" alt=""></a></div>
+			<div class="project-card" id="project-5"><a href="https://piyushmulatkar.github.io/Joke Teller"><img src="./img/joke.png" alt=""></a></div>
 		</div>
 		
 	</section>
 	<section class="section" id="contact">
+		<h2 class="section-heading">Contact</h2>
+		<div id="contact-container">
+			<a href="mailto:piyushmulatkar11@gmail.com?subject=Mail from Portfolio"><i class="fa fa-envelope"></i></a>
+			<a href="https://twitter.com/PiyushMulatkar_"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/piyushmulatkar"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/piyush-mulatkar-5155b0216"> <i class="fab fa-linkedin"></i></a>
+		</div>
 		
 	</section>
+	<script src="./js/script.js"></script>
 </body>
 </html>
