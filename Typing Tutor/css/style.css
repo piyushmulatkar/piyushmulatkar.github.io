@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Condensed:wght@700&display=swap");
+*,
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  /* border: 2px solid #FF0000 !important; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s ease;
+}
+#logo {
+  color: #ff4d00;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+#logo-span {
+  color: #ff0000;
+}
+#menu {
+  display: flex;
+  color: #ff4d00;
+}
+.menu-item {
+  margin: 10px;
+  list-style: none;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #ff4d00;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.menu-item a:hover {
+  color: #ff0000;
+}
+/* Nav on change */
+.toggleBackground {
+  background: #0e0e0e;
+  padding: 0 20px;
+}
+.toggleBackground #logo {
+  margin: 0;
+}
+/* Practice Page Styling */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 0 40px;
+}
+#wordBar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background: #1f1f1f88;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border-bottom: 2px solid #ff4d00;
+  box-shadow: 10px 7px 10px #fff2;
+}
+#wordBar li {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 1px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 4px 0px;
+  transition: 0.05s ease;
+  border-bottom: 2px solid transparent;
+}
+
+#infoBox {
+  padding: 30px;
+  background: url("../img/infobg.jpg");
+  background-size: cover;
+  width: 50%;
+  max-width: 300px;
+  height: 30%;
+  margin-top: 70px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 10px 9px 10px #ff4d0044;
+}
+
+.info-container {
+  border: 2px solid #0e0e0e;
+  padding: 10px;
+  width: 40%;
+  min-width: 100px;
+}
+
+/* Learn Page Styling */
+#learn-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#learn-hero h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+#learn-hero h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+#hero-button {
+  text-decoration: none;
+  color: #ff0000;
+  font-family: "Robot Condensed", sans-serif;
+  background: white;
+  border-radius: 15px;
+  border: 2px solid red;
+  padding: 10px;
+  font-weight: 700;
+  transition: 0.4s ease;
+}
+#hero-button:hover {
+  color: white;
+  background: #ff0000;
+  border: 2px solid white;
+}
+/* Learn Key Map Section */
+#key-map {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 100px 80px;
+}
+#key-map img {
+  width: 80vw;
+}
+#key-map h2 {
+  font-size: 30px;
+}
+/* Learn Tutorial Section */
+#tutorial {
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#tutorial h2 {
+  font-size: 30px;
+}
+#container {
+  width: 500px;
+  height: 281px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    background: #fff !important;
+    color: #fff !important;
+  }
+  #warning {
+    color: red !important;
+    font-size: 16px;
+    margin: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  #warning {
+    display: none;
+  }
+}

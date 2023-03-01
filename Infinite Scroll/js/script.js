@@ -1,8 +1,7 @@
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader-container');
 const submit = document.getElementById('submit');
-const query =
-document.getElementById('query');
+const query = document.getElementById('query');
 
 let ready=false;
 let imagesLoaded=0;
